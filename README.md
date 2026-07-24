@@ -1,5 +1,9 @@
 # Network Intrusion Detection System (NIDS): Cost-Sensitive Ensemble Modelling
 
+> **📦 Archived / off-brand + renamed.** This is a **cybersecurity** project (network intrusion detection with Random Forest + SMOTE + SHAP). It was previously published under the misleading repo name *"Deep-Learning-Sentiment-Analysis"* — it involves **neither deep learning nor sentiment analysis**. The repo is being renamed to `network-intrusion-detection` and archived, because it sits outside my core behavioural-AI / NLP portfolio. It's kept public for reference and would anchor a separate security-ML track if I choose to build one.
+>
+> *Note: the model trains on a synthetic dataset that mimics the NSL-KDD schema (stated openly in the methodology below), not the real NSL-KDD data.*
+
 ## Executive Summary
 Modern network architectures require robust Intrusion Detection Systems (IDS) to identify malicious traffic in real-time. Traditional rule-based systems often struggle to catch novel, zero-day attacks. This project implements a machine learning-based behavioural approach, learning the mathematical signatures of normal versus anomalous network traffic based on the benchmark NSL-KDD dataset.
 
@@ -31,5 +35,5 @@ A 'black-box' model is useless in cybersecurity. When the NIDS flags a connectio
 ## How to Run
 This notebook is entirely self-contained. 
 1. Clone the repository.
-2. Open `network_intrusion_detection.ipynb` in Jupyter Notebook or Google Colab.
+2. Open `notebooks/network_intrusion_detection.ipynb` in Jupyter Notebook or Google Colab.
 3. Hit "Run All". The script will automatically install missing dependencies (like `shap` and `imbalanced-learn`), generate the data, train the model, and output the interpretability charts.
